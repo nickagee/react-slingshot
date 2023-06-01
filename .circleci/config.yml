@@ -29,7 +29,6 @@ jobs:
     <<: *image
     steps:
       - checkout
-      - run: npm i
       - run: npm audit
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
